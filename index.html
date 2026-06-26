@@ -88,6 +88,12 @@ font-size:30px;
 border:3px solid #4a3913;
 }
 
+  .logo img{
+height:42px;
+width:auto;
+object-fit:contain;
+}
+
 .hero h1{
 font-size:30px;
 color:#f5c84c;
@@ -100,97 +106,6 @@ color:#9f9f9f;
 margin-top:5px;
 }
 
-.rating{
-margin-top:8px;
-font-size:14px;
-font-weight:600;
-color:#f5c84c;
-}
-
-.rating span{
-color:#40f08f;
-}
-
-.verify{
-margin-top:15px;
-padding:14px;
-border-radius:18px;
-background:linear-gradient(90deg,rgba(245,200,76,.16),rgba(245,200,76,.05));
-border:1px solid #5d4b1c;
-}
-
-.verify h3{
-font-size:16px;
-color:#f5c84c;
-}
-
-.verify p{
-font-size:13px;
-color:#9b9b9b;
-margin-top:4px;
-}
-
-.ticker{
-margin-top:14px;
-overflow:hidden;
-border-radius:12px;
-background:#0d0d0d;
-border:1px solid #272727;
-}
-
-.ticker p{
-padding:10px;
-white-space:nowrap;
-color:#f5c84c;
-animation:scroll 10s linear infinite;
-}
-
-@keyframes scroll{
-from{transform:translateX(100%)}
-to{transform:translateX(-100%)}
-}
-
-.section{
-margin-top:22px;
-}
-
-.section-title{
-font-size:22px;
-font-weight:800;
-margin-bottom:14px;
-color:#bfbfbf;
-}
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-}
-
-.box{
-background:#171717;
-border:1px solid #292929;
-padding:14px;
-border-radius:18px;
-}
-
-.box .icon{
-font-size:22px;
-margin-bottom:6px;
-}
-
-.box .value{
-font-size:28px;
-font-weight:800;
-color:#f5c84c;
-}
-
-.box .label{
-font-size:13px;
-color:#9d9d9d;
-}
-
-/* FIXED BUTTON */
 .fixed-download{
 position:fixed;
 left:0;
@@ -218,6 +133,7 @@ box-shadow:0 0 30px rgba(245,200,76,.4);
 }
 
 </style>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -235,6 +151,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1275666201072353&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
@@ -242,7 +159,9 @@ src="https://www.facebook.com/tr?id=1275666201072353&ev=PageView&noscript=1"
 <div class="container">
 
 <div class="header">
-<div class="logo">Rama567</div>
+<div class="logo">
+<img src="rama.jpeg" alt="Logo">
+</div>
 <div class="online">● 2,195 Online</div>
 </div>
 
@@ -254,49 +173,8 @@ src="https://www.facebook.com/tr?id=1275666201072353&ev=PageView&noscript=1"
 <div class="app-icon">⚡</div>
 <div>
 <h1>Rama567</h1>
-<div class="subtitle">Fast & Secure Withdrawals</div>
-<div class="rating">★★★★★ 4.2 | <span>2,195 active</span></div>
+<div class="subtitle">App Download Page</div>
 </div>
-</div>
-
-<div class="verify">
-<h3>🛡 Verified by 50,000+ Members</h3>
-<p>Trusted community · Secure transactions</p>
-</div>
-
-<div class="ticker">
-<p>✅ 100% verified & secure • 🔥 New update live • ⚡ Instant withdrawals</p>
-</div>
-
-<div class="section">
-<div class="section-title">KEY NUMBERS</div>
-
-<div class="grid">
-<div class="box">
-<div class="icon">₹</div>
-<div class="value">100</div>
-<div class="label">Min Deposit</div>
-</div>
-
-<div class="box">
-<div class="icon">🏧</div>
-<div class="value">300</div>
-<div class="label">Min Withdrawal</div>
-</div>
-
-<div class="box">
-<div class="icon">⚡</div>
-<div class="value">24/7</div>
-<div class="label">Auto Withdrawal</div>
-</div>
-
-<div class="box">
-<div class="icon">📞</div>
-<div class="value">24×7</div>
-<div class="label">Support</div>
-</div>
-</div>
-
 </div>
 
 </div>
@@ -304,8 +182,10 @@ src="https://www.facebook.com/tr?id=1275666201072353&ev=PageView&noscript=1"
 </div>
 
 <!-- FIXED DOWNLOAD BUTTON -->
-<div class="fixed-download">
-<a class="download-btn" href="https://rama567.win/downloads/Rama_567.apk">
+<div class="fixed">
+<a class="download-btn"
+   href="https://rama567.win/downloads/Rama_567.apk"
+   onclick="fbq('track', 'Subscribe');">
 Download APK
 </a>
 </div>
